@@ -1,23 +1,11 @@
-#pragma once
-#include <iostream>
-#include <string>
-#include <string_view>
-#include <fstream>
-#include <vector>
-#include <algorithm>
-#include <chrono>
+// save.h 한 학기 강의를 저장
+// 2024.3.7
+////////////////////////////////////////
 
-using namespace std;
+#pragma once
+#include <string_view>
+#include <iostream>
+#include <fstream>
 //using namespace std;
 
-// version 17.9 or more 
-// release , x64
-// project -> 속성 -> std::c++latest , SDL - no
-
-// 출력창 80 X 25
-
-// 2024.03.04
-// source file save 기능
-
-// const std::string& == string_view (메모리의 시작주소와 개수만 알려줌)
-void save(string_view fileName);
+void save(std::string_view fileName);
